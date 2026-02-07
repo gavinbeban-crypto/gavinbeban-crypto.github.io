@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1e293b);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 15px 0;
+  max-width: 500px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: #1e293b;
+}
+
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #2563eb;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills span {
+  border: 1px solid #2563eb;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* ANIMASI */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
