@@ -372,26 +372,77 @@ body {
   transform: translateY(0);
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE OPTIMAL HP ===== */
 @media (max-width: 768px) {
 
-  .hero h1 { font-size: 2.2rem; }
-  .hero p { font-size: 1rem; padding: 0 20px; }
-  .section { padding: 60px 20px; }
-  .card { width: 100%; max-width: 320px; }
-  footer { font-size: 0.9rem; }
+  /* HERO */
+  .hero {
+    min-height: 40vh;         /* lebih pas di HP */
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;          /* lebih kecil tapi tetap jelas */
+  }
+  .hero p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
 
-  .footer-container { flex-direction: column; gap: 30px; }
-  .footer-brand { flex-direction: column; align-items: flex-start; }
-  .codexpress-desc { max-width: 90%; font-size: 0.9rem; }
+  /* SECTION */
+  .section {
+    padding: 50px 15px;       /* lebih compact di HP */
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .section-desc {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
 
-  #project .carousel .card { flex-direction: column; padding: 10px; }
-  #project .carousel .card img { width: 100%; height: 250px; border-radius: 16px; }
-  #project .carousel .card .card-text { padding: 10px 0 0 0; }
+  /* PROJECT CARDS */
+  #project .carousel .card {
+    flex-direction: column;   /* gambar di atas, teks di bawah */
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+  }
 
-  .about-wrapper { flex-direction: column; }
-  .about-image { justify-content: center; }
+  #project .carousel .card img {
+    width: 90%;               /* gambar lebih kecil tapi proporsional */
+    height: 220px;            /* panjang tetap */
+    border-radius: 12px;
+  }
 
-  .carousel-btn.left { left: -10px; }
-  .carousel-btn.right { right: -10px; }
+  #project .carousel .card .card-text {
+    width: 90%;
+    text-align: center;       /* teks di tengah card */
+    padding: 10px 0;
+  }
+
+  #project .carousel .card .card-title {
+    font-size: 1.2rem;        /* judul card lebih besar daripada desc */
+  }
+  #project .carousel .card .card-desc {
+    font-size: 0.9rem;
+  }
+
+  /* CAROUSEL BUTTON */
+  .carousel-btn.left { left: 5px; }
+  .carousel-btn.right { right: 5px; }
+
+  /* ABOUT SECTION */
+  .about-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-text, .about-image { width: 100%; }
+  .about-image img { max-width: 100%; height: auto; }
+
+  /* FOOTER */
+  .footer-container { flex-direction: column; gap: 20px; }
+  .footer-logo img { width: 150px; }
+  .codexpress-desc { font-size: 0.9rem; max-width: 95%; }
+  .footer-menu a, .footer-contact p { font-size: 0.85rem; }
 }
+
