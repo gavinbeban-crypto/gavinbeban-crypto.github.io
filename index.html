@@ -17,41 +17,59 @@
     <a href="#about" class="btn animate">Tentang Kami</a>
   </header>
 
-  <!-- ABOUT US + TEAM -->
+  <!-- ABOUT US -->
   <section class="section" id="about">
-    <h2 class="section-title animate">Tentang Kami</h2>
-    <p class="section-desc animate">
-      Codexpress adalah tim kecil yang beranggotakan 2 pelajar dari SMKN 1 Boyolangu,
-      jurusan RPL. Kami suka ngoding dan membangun website modern dengan tampilan yang clean,
-      performa yang ringan, dan pastinya nyaman dipakai. Walaupun masih pelajar,
-      kami serius dalam mengerjakan setiap project dan selalu menyesuaikan hasil
-      dengan kebutuhan serta budget klien.
-    </p>
 
-    <!-- TEAM -->
-    <h2 class="section-title animate" style="margin-top:60px;">Anggota Tim</h2>
-
-    <div class="card-container">
-      <div class="card animate">
-        <img src="images/member1.jpg" alt="Anggota 1">
-        <h3>Anggota 1</h3>
-        <p>Frontend Developer</p>
-        <span>HTML • CSS • JavaScript</span>
+    <div class="about-wrapper animate">
+      <!-- TEKS KIRI -->
+      <div class="about-text">
+        <h2 class="section-title">Tentang Kami</h2>
+        <p class="section-desc">
+          Codexpress adalah tim kecil yang beranggotakan 2 pelajar dari SMKN 1 Boyolangu,
+          jurusan RPL. Kami suka ngoding dan membangun website modern dengan tampilan yang clean,
+          performa yang ringan, dan pastinya nyaman dipakai. Walaupun masih pelajar,
+          kami serius dalam mengerjakan setiap project dan selalu menyesuaikan hasil
+          dengan kebutuhan serta budget klien.
+        </p>
       </div>
 
-      <div class="card animate">
-        <img src="images/member2.jpg" alt="Anggota 2">
-        <h3>Anggota 2</h3>
-        <p>Backend / UI Designer</p>
-        <span>UI Design • PHP • Database</span>
+      <!-- GAMBAR KANAN (TANPA BORDER) -->
+      <div class="about-image">
+        <img src="images/logo.png" alt="Tentang Codexpress">
+      </div>
+    </div>
+
+    <!-- TEAM -->
+    <h2 class="section-title animate" style="margin-top:80px;">Anggota Tim</h2>
+
+    <div class="card-container">
+      <div class="card animate card-horizontal">
+        <img src="images/member1_new.jpg" alt="Anggota 1">
+
+        <div class="card-text">
+          <h3>Elvonda Ditya T.</h3>
+          <p>Frontend Developer</p>
+          <p>BackEnd • HTML • CSS • JavaScript</p>
+          <span>IG : @vandoszz</span>
+        </div>
+      </div>
+
+      <div class="card animate card-horizontal">
+        <img src="images/gapin.jpeg" alt="Anggota 2">
+
+        <div class="card-text">
+          <h3>Gavin Khalisio H.</h3>
+          <p>UI / UX</p>
+          <p>UI Design • HTML • CSS • JavaScript</p>
+          <span>IG : @gvinkha_</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- SKILLS
   <section class="section animate" id="skills">
     <h2 class="section-title">Skills</h2>
-
     <div class="skills">
       <span>HTML</span>
       <span>CSS</span>
@@ -61,29 +79,105 @@
       <span>PHP</span>
       <span>MySQL</span>
     </div>
-  </section>
+  </section> -->
 
   <!-- PROJECT -->
   <section class="section animate" id="project">
-    <h2 class="section-title">Project</h2>
-    <p class="section-desc">
-      Beberapa project website yang pernah kami kerjakan, mulai dari landing page,
-      website sekolah, sampai web sederhana sesuai kebutuhan klien.
-    </p>
-  </section>
+  <h2 class="section-title">Project</h2>
+  <p class="section-desc">
+    Beberapa project website yang pernah kami kerjakan, mulai dari landing page,
+    website sekolah, sampai web sederhana sesuai kebutuhan klien.
+  </p>
 
-  <!-- FOOTER + KONTAK -->
-  <footer>
-    <p>
-      Email: codexpress@gmail.com <br>
-      Instagram: @codexpress.id
-    </p>
-    <br>
-    © 2026 Codexpress Team
-  </footer>
+  <!-- Carousel Wrapper -->
+  <div class="carousel-wrapper">
+    <!-- Tombol Kiri -->
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+    <!-- Container Carousel -->
+    <div class="carousel" id="carousel">
+      <!-- Card 1 -->
+      <div class="card animate">
+        <img src="images/gapin.jpeg" alt="Project 1">
+        <div class="card-text">
+          <h3 class="card-title">Landing Page Sekolah</h3>
+          <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ullam non ab itaque iusto illo? Placeat possimus, voluptatum labore maiores, sequi maxime veritatis dolor aspernatur corporis est reiciendis, incidunt obcaecati?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo cupiditate distinctio maiores recusandae molestiae ab, in aliquam necessitatibus minus iure deleniti ipsam quos numquam animi. Dolores repudiandae doloribus repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis velit facere dolor laboriosam a dolore quaerat provident expedita, repudiandae corrupti dolorum reiciendis libero quisquam mollitia deleniti autem saepe et.</p>
+          <span>HTML • CSS • JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card animate">
+        <img src="images/project2.png" alt="Project 2">
+        <div class="card-text">
+          <h3>Website Toko Online</h3>
+          <p>Web sederhana untuk toko online, mendukung transaksi online dan katalog produk.</p>
+          <span>HTML • CSS • PHP • MySQL</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card animate">
+        <img src="images/project3.png" alt="Project 3">
+        <div class="card-text">
+          <h3>Portfolio Personal</h3>
+          <p>Website portfolio untuk menampilkan karya dan project pribadi dengan UI clean.</p>
+          <span>HTML • CSS • JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tombol Kanan -->
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+  <div class="footer-container">
+
+   <!-- BRAND -->
+  <div class="footer-brand">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="codexpress logo">
+
+      <div class="footer-brand-text">
+        <span>codexpress.id</span>
+        <p class="codexpress-desc">
+          Tim pelajar RPL yang fokus membangun website modern,
+          ringan, dan nyaman digunakan.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- MENU -->
+    <div class="footer-menu">
+      <h4>Menu</h4>
+      <a href="#about">Tentang Kami</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: codexpress.id@gmail.com</p>
+      <p>Instagram: @codexpress.id</p>
+    </div>
+
+  </div>
+
+  <div class="footer-line"></div>
+
+  <div class="footer-bottom">
+    © 2026 Codexpress Team. All rights reserved.
+  </div>
+</footer>
+
 
 </body>
 </html>
-
-
-
