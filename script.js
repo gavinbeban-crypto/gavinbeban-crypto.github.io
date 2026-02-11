@@ -1,5 +1,15 @@
-const animatedElements = document.querySelectorAll(".animate");
+function scrollCarousel(direction) {
+  const carousel = document.getElementById("carousel");
+  const cardWidth = carousel.querySelector(".card").offsetWidth;
 
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: "smooth"
+  });
+}
+
+// Animasi fade-in
+const animatedElements = document.querySelectorAll(".animate");
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
