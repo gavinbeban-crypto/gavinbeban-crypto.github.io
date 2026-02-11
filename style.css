@@ -13,7 +13,7 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 50vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -445,4 +445,5 @@ body {
   .codexpress-desc { font-size: 0.9rem; max-width: 95%; }
   .footer-menu a, .footer-contact p { font-size: 0.85rem; }
 }
+
 
